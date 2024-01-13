@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>妖精に誑かされた村</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="center">
+    <header>
+        <h4>妖精に誑かされた村</h4>
+    </header>
+    </div>
+    <main>
+        <h2>産物１</h2>
+        <section>
+            <h3 class="midasi1">～迷い込んだものへ～
+            </h3>
+            <div class="ttl_center5">
+                今は何人も立ち入るな。これは警告である。<br>
+                ここは妖精によりて、趣旨混沌を遊ばせる場である。<br>
+                闇に闇は相応しけれ、いまだこの場は完全ではなく、不安定極まりない。<br>
+                いついかなる時に妖精様の怒りを買うか予期知れず、府の感情に飲まれけり。<br>
+                世の理に触れ、世の理を知るべきは今ではない。さぁ、行くがいい。<br>
+            </div>
+        </section>
+        <h3 class="midasi1">～混沌の溜り場にて眠る瘴気～
+        </h3>
+        <section>
+            <div>
+                <?php
+                $dirname = "C:/Users/0726u/.vscode/hp otameshi/2 kaikyaku";
+                $images = glob($dirname."*.{jpg,png,gif,jpeg}", GLOB_BRACE);
+                foreach($images as $image) {
+                    echo '<img src="'.$image.'" /><br />';
+                }
+                ?>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer>
+        <hr>
+        -妖精に誑かされた村- 2024
+    </footer>
+</body>
+</html>
